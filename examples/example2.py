@@ -7,16 +7,16 @@ from flipexception import FlipException
 
 try:
     raise FlipException("Error getting lalala")
-except Exception, e:
-    print str(e)
+except Exception as e:
+    print(str(e))
 
 try:
     raise FlipException("Error getting value")
-except FlipException, e:
-    print str(e)
+except FlipException as e:
+    print(str(e))
 
 try:
     raise FlipException
-except FlipException, e:
-    print str(e)
+except FlipException as e:
+    print(str(e))
 

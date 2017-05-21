@@ -19,7 +19,7 @@ class FlipException(Exception):
         else:
             message = upsidedown.transform(message)
 
-        return unicode("(╯°□°）╯︵ " + message)
+        return str("(╯°□°）╯︵ " + message)
 
     def __init__(self, message=None):
         message = self.flip_text(message)

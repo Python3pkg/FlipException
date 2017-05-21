@@ -30,6 +30,6 @@ class FlipAllTheThings(unittest.TestCase):
         Flipped text
         """
         fliped = FlipException.flip_text("lala")
-        expected = unicode('(╯°□°）╯︵ ɐꞁɐꞁ')
+        expected = str('(╯°□°）╯︵ ɐꞁɐꞁ')
 
         self.assertEqual(fliped, expected)
